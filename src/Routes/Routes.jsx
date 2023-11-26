@@ -7,12 +7,14 @@ import Home from "../pages/Home/Home/Home";
 import Gallery from "../pages/Gallery/Gallery";
 import Trainer from "../pages/Trainer/Trainer";
 import Classes from "../pages/Classes/Classes";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 
  export const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
             path:'/',
