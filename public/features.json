@@ -3,56 +3,56 @@
       "id": 1,
       "title": "Personalized Workouts",
       "description": "Tailored workout plans based on your fitness level, goals, and preferences.",
-      "image": "personalized_workouts.jpg"
+      "image": "https://i.ibb.co/D1Fvbbk/screen-shot-2018-06-22-at-07-50-38.png"
     },
     {
       "id": 2,
       "title": "Real-Time Activity Tracking",
       "description": "Track your steps, distance, calories burned, and more in real-time.",
-      "image": "activity_tracking.jpg"
+      "image": "https://i.ibb.co/ck4Xp5f/istockphoto-1349328573-612x612.jpg"
     },
     {
       "id": 3,
       "title": "Weight Lifting Programs",
       "description": "Unlock strength and build muscle with specialized weight lifting programs for all levels.",
-      "image": "weight_lifting.jpg"
+      "image": "https://i.ibb.co/6ZrWM4N/Y2018-Summer-Series-Gym-Kelsey-14-074-imagelibrary-Low-res-1200x800-5b2df79-en49c503d8e64bde140b1a11.jpg"
     },
     {
       "id": 4,
       "title": "Running Routes",
       "description": "Discover new running routes, track your pace, and set new personal records.",
-      "image": "running_routes.jpg"
+      "image": "https://i.ibb.co/pKVWvjn/wyprobuj-5-najlepszych-cwiczen-cardio-na-silowni-5.jpg"
     },
     
     {
       "id": 6,
       "title": "Nutrition Guidance",
       "description": "Access personalized nutrition recommendations to complement your fitness routine.",
-      "image": "nutrition_guidance.jpg"
+      "image": "https://i.ibb.co/JxGrZw4/KK1-ADVANCED-DIET-FITNESS-AND-NUTRITION-COURSE.jpg"
     },
     {
       "id": 7,
       "title": "Advanced Analytics",
       "description": "Gain insights into your fitness progress with comprehensive analytics and performance metrics.",
-      "image": "advanced_analytics.jpg"
+      "image": "https://i.ibb.co/k1yZSn9/bigstock-Smiling-personal-trainer-using-196286707.jpg"
     },
     {
       "id": 8,
       "title": "Challenge Yourself",
       "description": "Participate in fitness challenges to push your limits and achieve new milestones.",
-      "image": "challenge_yourself.jpg"
+      "image": "https://i.ibb.co/zRWcfVP/pu-1024x683.jpg"
     },
     {
       "id": 9,
       "title": "Wearable Device Integration",
       "description": "Seamlessly connect and sync data with popular fitness wearables for a unified experience.",
-      "image": "wearable_integration.jpg"
+      "image": "https://i.ibb.co/PjSKmR5/brand-gym-cardio-equipment-treadmill-powermill-860.jpg"
     },
     {
       "id": 10,
       "title": "Guided Meditation",
       "description": "Relax and rejuvenate with guided meditation sessions to enhance your overall well-being.",
-      "image": "guided_meditation.jpg"
+      "image": "https://i.ibb.co/2ysLzdV/Everyday-benefits-of-meditation.jpg"
     }
     
   ]
