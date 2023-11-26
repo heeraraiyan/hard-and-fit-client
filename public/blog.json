@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "title": "The Importance of Cardiovascular Exercise",
+      "content": "Cardiovascular exercise, often known as cardio, is essential for maintaining a healthy heart and overall well-being...",
+      "author": "John Doe",
+      "date": "2023-05-01"
+    },
+    {
+      "id": 2,
+      "title": "Nutrition Tips for Building Lean Muscle",
+      "content": "Building lean muscle requires a combination of effective workouts and proper nutrition. Here are some nutrition tips to help you achieve your muscle-building goals...",
+      "author": "Jane Smith",
+      "date": "2023-04-25"
+    },
+    {
+      "id": 3,
+      "title": "Mindful Eating: A Key to Healthy Living",
+      "content": "Mindful eating involves paying full attention to the experience of eating and enjoying the taste, texture, and flavors of your food. Learn how practicing mindful eating can contribute to a healthier lifestyle...",
+      "author": "Alex Johnson",
+      "date": "2023-04-18"
+    },
+    {
+      "id": 4,
+      "title": "Effective Strength Training Workouts for Beginners",
+      "content": "Starting a strength training routine can be intimidating, especially for beginners. Here are some effective strength training workouts designed for beginners to help you get started on your fitness journey...",
+      "author": "Emily Davis",
+      "date": "2023-04-10"
+    },
+    {
+      "id": 5,
+      "title": "The Role of Sleep in Fitness and Recovery",
+      "content": "Quality sleep is crucial for overall health and plays a significant role in fitness and recovery. Explore the connection between sleep and your fitness goals...",
+      "author": "Mark Thompson",
+      "date": "2023-04-02"
+    }
+  ]
