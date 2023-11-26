@@ -13,8 +13,8 @@ const Navbar = () => {
        </>
     return (
         <div>
-        <div className="navbar 
-         bg-gray-50 text-amber-700  text-xl px-8 font-bold">
+        <div className="navbar fixed z-10
+         bg-gray-50 text-amber-600  text-xl px-8 font-bold">
 <div className="navbar-start">
 <div className="dropdown">
   <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -25,7 +25,7 @@ const Navbar = () => {
   </ul>
 </div>
 {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
-<img className="h-24 w-24" src="https://i.ibb.co/vkGmMjS/Orange-and-Black-Modern-Fitness-Center-Logo.png" alt="" />
+<img className="h-24 w-28" src="https://i.ibb.co/vkGmMjS/Orange-and-Black-Modern-Fitness-Center-Logo.png" alt="" />
 
 </div>
 <div className="navbar-center hidden lg:flex">

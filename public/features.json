@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "title": "Personalized Workouts",
+      "description": "Tailored workout plans based on your fitness level, goals, and preferences.",
+      "image": "personalized_workouts.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Real-Time Activity Tracking",
+      "description": "Track your steps, distance, calories burned, and more in real-time.",
+      "image": "activity_tracking.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Weight Lifting Programs",
+      "description": "Unlock strength and build muscle with specialized weight lifting programs for all levels.",
+      "image": "weight_lifting.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Running Routes",
+      "description": "Discover new running routes, track your pace, and set new personal records.",
+      "image": "running_routes.jpg"
+    },
+    
+    {
+      "id": 6,
+      "title": "Nutrition Guidance",
+      "description": "Access personalized nutrition recommendations to complement your fitness routine.",
+      "image": "nutrition_guidance.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Advanced Analytics",
+      "description": "Gain insights into your fitness progress with comprehensive analytics and performance metrics.",
+      "image": "advanced_analytics.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Challenge Yourself",
+      "description": "Participate in fitness challenges to push your limits and achieve new milestones.",
+      "image": "challenge_yourself.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Wearable Device Integration",
+      "description": "Seamlessly connect and sync data with popular fitness wearables for a unified experience.",
+      "image": "wearable_integration.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Guided Meditation",
+      "description": "Relax and rejuvenate with guided meditation sessions to enhance your overall well-being.",
+      "image": "guided_meditation.jpg"
+    }
+    
+  ]
