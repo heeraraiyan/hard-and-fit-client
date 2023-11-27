@@ -52,9 +52,9 @@ const Register = () => {
       })
     } 
     return (  
-        <div className="bg-gradient-to-r from-cyan-400 to-sky-800">
+        <div className="bg-gradient-to-r from-gray-300 to-gray-800">
             
-            <h1 className="text-5xl font-bold text-sky-900 italic text-center mt-8">Register now!</h1>
+            <h1 className="text-5xl font-bold text-amber-700 italic text-center pt-8">Register now!</h1>
        <div className="md:flex items-center justify-center">
         <div className="ml-20">
             <img src="https://i.ibb.co/rGc9JLm/shape-scene-woman-working-1.png" alt="" />
@@ -65,38 +65,38 @@ const Register = () => {
     <div className="text-center">
       
     </div>
-    <div className=" flex-shrink-0 w-full max-w-sm shadow-2xl   bg-cyan-600 px-10 py-10">
+    <div className=" flex-shrink-0 w-full max-w-md shadow-2xl   bg-slate-900 px-10 py-10">
       <form onSubmit={handleRegister} className="card-body">
         <div className="form-control">
           <label className="label">
-            <span className="label-text text-slate-950 font-bold">Name</span>
+            <span className="label-text text-zinc-100 font-bold">Name</span>
           </label>
           <input type="text" name="name" placeholder="write your name" className="input input-bordered" required />
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text text-slate-950 font-bold">Email</span>
+            <span className="label-text text-zinc-100 font-bold">Email</span>
           </label>
           <input type="email" name="email" placeholder="email" className="input input-bordered" required />
         </div>
         <div className="form-control">
        <label className="label">
-       <span className="label-text text-slate-950 font-bold">Photo URL</span>
+       <span className="label-text text-zinc-100 font-bold">Photo URL</span>
              </label>
            <input type="text" name="photoURL" placeholder="Photo URL" className="input input-bordered" />
             </div>
 
         <div className="form-control">
           <label className="label">
-            <span className="label-text text-slate-950 font-bold">Password</span>
+            <span className="label-text text-zinc-100 font-bold">Password</span>
           </label>
           <input type="password" name="password" placeholder="password" className="input input-bordered" required />
           <label className="label">
-            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+            <a href="#" className="label-text-alt link link-hover ">Forgot password?</a>
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Register</button>
+          <button className="btn btn-success ">Register</button>
         </div>
     </form>
     {
@@ -106,7 +106,7 @@ const Register = () => {
     {
         registerSuccess && <p className="text-green-600">{registerSuccess}</p>
     }
-        <p className="">Already have an account? please <Link className="text-white bg-blue-500 px-2 py-1 text-3xl rounded-lg" to="/login">Login</Link></p>
+        <p className="text-zinc-50">Already have an account? please <Link className=" bg-zinc-400 text-green-600 px-1 py-1 text-3xl rounded-lg" to="/login">Login</Link></p>
     </div>
   </div>
 </div>
