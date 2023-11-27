@@ -8,6 +8,8 @@ import Gallery from "../pages/Gallery/Gallery";
 import Trainer from "../pages/Trainer/Trainer";
 import Classes from "../pages/Classes/Classes";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Login from "../pages/Login/Login";
+import Register from "../pages/Register/Register";
 
 
  export const router = createBrowserRouter([
@@ -30,6 +32,14 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
         {
             path: '/classes',
             element: <Classes></Classes>
+        },
+        {
+          path: '/login',
+          element: <Login></Login>
+        },
+        {
+          path: '/register',
+          element: <Register></Register>
         }
         
       ]

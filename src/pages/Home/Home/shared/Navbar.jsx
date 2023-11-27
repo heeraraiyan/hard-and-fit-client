@@ -1,20 +1,32 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../../providers/AuthProviders";
 
 
 const Navbar = () => {
+
+  const { user ,logOut } =useContext(AuthContext);
+  // console.log(user)
+ 
+  const handleLogOut = () =>{
+    logOut()
+    .then(()=>console.log('user logged'))
+    .catch(error => console.error(error))
+  }
 
     const navOptions = <>
     <li className=""> <Link to="/">Home</Link></li>
     <li> <Link to="/gallery">Gallery</Link></li>
     <li> <Link to="/trainer">Trainer</Link></li>
     <li> <Link to="/classes">Classes</Link></li>
+    {/* <li> <Link to="/login">Login</Link></li> */}
     
     {/* <li> <Link to="/order/salad">Order Food</Link></li> */}
        </>
     return (
         <div>
         <div className="navbar fixed z-10
-         bg-gray-50 text-amber-600  text-xl px-8 font-bold">
+         bg-gray-50 text-amber-600  text-xl px-8 font-bold ">
 <div className="navbar-start">
 <div className="dropdown">
   <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -34,7 +46,18 @@ const Navbar = () => {
 </ul>
 </div>
 <div className="navbar-end">
-<a className="btn">Button</a>
+       {
+            user? <>
+            
+            <span>{user.email}</span>
+            <a onClick={handleLogOut} className="btn btn-error rounded-full">sign out</a>
+            
+            
+            </>
+            : <Link to='/login'>
+              <button className="btn border-2 px-4 py-2 rounded-md text-amber-600 text-xl">Login</button>
+            </Link>
+          }
 </div>
 </div>
         
