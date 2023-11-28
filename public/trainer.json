@@ -1,0 +1,110 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "image": "https://i.ibb.co/RpWwthX/B94A7371.jpg",
+      "experience": 5,
+      "socialIcons": {
+        "twitter": "https://twitter.com/johndoe",
+        "instagram": "https://www.instagram.com/johndoe/",
+        "linkedin": "https://www.linkedin.com/in/johndoe/"
+      },
+      "availableTimeSlots": [
+        "Monday 8 am - 9 am",
+        "Monday 9 am - 10 am",
+        "Wednesday 8 am - 9 am",
+        "Wednesday 9 am - 10 am",
+        "Friday 8 am - 9 am",
+        "Friday 9 am - 10 am"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "image": "https://i.ibb.co/zZf12jK/depositphotos-104738456-stock-photo-female-gym-instructor-writing-on.jpg",
+      "experience": 8,
+      "socialIcons": {
+        "twitter": "https://twitter.com/janesmith",
+        "instagram": "https://www.instagram.com/janesmith/",
+        "linkedin": "https://www.linkedin.com/in/janesmith/"
+      },
+      "availableTimeSlots": [
+        "Tuesday 2 pm - 3 pm",
+        "Tuesday 3 pm - 4 pm",
+        "Thursday 2 pm - 3 pm",
+        "Thursday 3 pm - 4 pm"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mark Johnson",
+      "image": "https://i.ibb.co/HpPV66n/Scott-Laidler-headshot-1.jpg",
+      "experience": 10,
+      "socialIcons": {
+        "twitter": "https://twitter.com/markjohnson",
+        "instagram": "https://www.instagram.com/markjohnson/",
+        "linkedin": "https://www.linkedin.com/in/markjohnson/"
+      },
+      "availableTimeSlots": [
+        "Monday 8 am - 9 am",
+        "Monday 9 am - 10 am",
+        "Wednesday 8 am - 9 am",
+        "Wednesday 9 am - 10 am",
+        "Friday 8 am - 9 am",
+        "Friday 9 am - 10 am"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Emily Brown",
+      "image": "https://i.ibb.co/nMZth8B/13738418-young-female-gym-instructor-portrait.jpg",
+      "experience": 6,
+      "socialIcons": {
+        "twitter": "https://twitter.com/emilybrown",
+        "instagram": "https://www.instagram.com/emilybrown/",
+        "linkedin": "https://www.linkedin.com/in/emilybrown/"
+      },
+      "availableTimeSlots": [
+        "Tuesday 2 pm - 3 pm",
+        "Tuesday 3 pm - 4 pm",
+        "Thursday 2 pm - 3 pm",
+        "Thursday 3 pm - 4 pm"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Michael Wilson",
+      "image": "https://i.ibb.co/LJg0SyJ/9383891f644186abe029214fff4256b8.jpg",
+      "experience": 7,
+      "socialIcons": {
+        "twitter": "https://twitter.com/michaelwilson",
+        "instagram": "https://www.instagram.com/michaelwilson/",
+        "linkedin": "https://www.linkedin.com/in/michaelwilson/"
+      },
+      "availableTimeSlots": [
+        "Monday 8 am - 9 am",
+        "Monday 9 am - 10 am",
+        "Wednesday 8 am - 9 am",
+        "Wednesday 9 am - 10 am",
+        "Friday 8 am - 9 am",
+        "Friday 9 am - 10 am"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Sophia Davis",
+      "image": "https://i.ibb.co/sqLhpps/images.jpg",
+      "experience": 9,
+      "socialIcons": {
+        "twitter": "https://twitter.com/sophiadavis",
+        "instagram": "https://www.instagram.com/sophiadavis/",
+        "linkedin": "https://www.linkedin.com/in/sophiadavis/"
+      },
+      "availableTimeSlots": [
+        "Tuesday 2 pm - 3 pm",
+        "Tuesday 3 pm - 4 pm",
+        "Thursday 2 pm - 3 pm",
+        "Thursday 3 pm - 4 pm"
+      ]
+    }
+  ]
