@@ -1,12 +1,15 @@
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProviders";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 
 const Login = () => {
     const { signIn , signInWithGoogle} = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
+    const axiosPublic = useAxiosPublic();
+    
 
     const [loginError, setLoginError] = useState('');
     // console.log(user)
@@ -37,6 +40,16 @@ const Login = () => {
       signInWithGoogle()
       .then(result => {
         console.log(result.user)
+        const userInfo = {
+          email: result.user?.email,
+          name: result.user?.displayName
+        }
+
+        axiosPublic.post('/users', userInfo)
+        .then(res =>{
+          console.log(res.data);
+          navigate('/');
+        })
       })
       .catch(error =>{
         console.error(error)
