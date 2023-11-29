@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProviders";
 import Swal from "sweetalert2";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
+import { Helmet } from "react-helmet-async";
 
 
 const Register = () => {
@@ -78,6 +79,9 @@ const Register = () => {
   }
   return (
     <div className="bg-gradient-to-r from-gray-300 to-gray-800">
+      <Helmet>
+            <title>HARD & TIME | Register</title>
+            </Helmet>
 
       <h1 className="text-5xl font-bold text-amber-700 italic text-center pt-8">Register now!</h1>
       <div className="md:flex items-center justify-center">

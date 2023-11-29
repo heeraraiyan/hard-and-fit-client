@@ -2,6 +2,7 @@ import { useState } from "react";
 import useGallery from "../../hooks/useGallery";
 import InfiniteScroll from "react-infinite-scroll-component";
 import '../Gallery/Gallery.css'
+import { Helmet } from "react-helmet-async";
 
 
 const Gallery = () => {
@@ -19,6 +20,9 @@ const Gallery = () => {
   
     return (
         <div className="pt-28 gallery-container pb-20 bg-slate-700 ">
+          <Helmet>
+            <title>HARD & TIME | Gallery</title>
+            </Helmet>
       <h2>{images.length}</h2>
 
       <InfiniteScroll

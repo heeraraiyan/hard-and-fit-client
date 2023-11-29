@@ -14,6 +14,7 @@ import Dashboard from "../Layout/Dashboard";
 import Subscribers from "../pages/Dashboard/Subscribers";
 import AllTrainer from "../pages/Dashboard/AllTrainer";
 import Community from "../pages/Community/Community";
+import BeTrainer from "../pages/Trainer/BeTrainer";
 
 
  export const router = createBrowserRouter([
@@ -48,6 +49,10 @@ import Community from "../pages/Community/Community";
         {
           path: '/register',
           element: <Register></Register>
+        },
+        {
+          path: '/betrainer',
+          element: <BeTrainer></BeTrainer>
         }
         
       ]

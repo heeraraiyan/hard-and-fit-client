@@ -1,5 +1,7 @@
+import { Helmet } from "react-helmet-async";
 import useTrainer from "../../hooks/useTrainer";
 import TrainerCard from "./TrainerCard";
+import { Link } from "react-router-dom";
 
 
 const Trainer = () => {
@@ -7,6 +9,9 @@ const Trainer = () => {
     console.log(trainer.length)
     return (
         <div className="pt-28 bg-slate-400">
+            <Helmet>
+            <title>HARD & TIME | Trainer</title>
+            </Helmet>
 
 <h1 className="text-5xl italic font-bold mb-20 text-center text-amber-500 pt-10">Our Trainer</h1>
 
@@ -19,7 +24,7 @@ const Trainer = () => {
             </div>
 
             <div className="flex items-center justify-center pb-12">
-            <button className="btn  text-center px-10 text-lg bg-yellow-500 text-slate-100 rounded-lg">Be A Trainer</button>
+            <Link to='/betrainer'><button className="btn  text-center px-10 text-lg bg-yellow-500 text-slate-100 rounded-lg">Be A Trainer</button></Link>
             </div>
            
             
