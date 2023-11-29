@@ -1,0 +1,14 @@
+
+
+.team-container {
+    margin: 20px; /* Adjust margin as needed */
+  }
+  
+  .swiper-image {
+    height: 550px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Add box-shadow for a shadow effect */
+  }
+  

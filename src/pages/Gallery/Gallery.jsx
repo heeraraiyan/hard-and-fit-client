@@ -18,7 +18,7 @@ const Gallery = () => {
     };
   
     return (
-        <div className="pt-28 gallery-container mb-20">
+        <div className="pt-28 gallery-container pb-20 bg-slate-700 ">
       <h2>{images.length}</h2>
 
       <InfiniteScroll
