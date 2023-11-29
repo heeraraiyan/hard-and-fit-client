@@ -19,6 +19,7 @@ const Navbar = () => {
     <li> <Link to="/gallery">Gallery</Link></li>
     <li> <Link to="/trainer">Trainer</Link></li>
     <li> <Link to="/classes">Classes</Link></li>
+    <li> <Link to="/community">Community</Link></li>
     <li> <Link to="/dashboard/subscribers">Dashboard</Link></li>
 
     {/* <li> <Link to="/login">Login</Link></li> */}

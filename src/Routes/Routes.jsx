@@ -13,6 +13,7 @@ import Register from "../pages/Register/Register";
 import Dashboard from "../Layout/Dashboard";
 import Subscribers from "../pages/Dashboard/Subscribers";
 import AllTrainer from "../pages/Dashboard/AllTrainer";
+import Community from "../pages/Community/Community";
 
 
  export const router = createBrowserRouter([
@@ -35,6 +36,10 @@ import AllTrainer from "../pages/Dashboard/AllTrainer";
         {
             path: '/classes',
             element: <Classes></Classes>
+        },
+        {
+          path: '/community',
+          element: <Community></Community>
         },
         {
           path: '/login',
