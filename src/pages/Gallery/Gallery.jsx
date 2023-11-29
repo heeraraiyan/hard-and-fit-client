@@ -1,40 +1,40 @@
-import { useInfiniteQuery } from "@tanstack/react-query";
+import { useState } from "react";
+import useGallery from "../../hooks/useGallery";
+import InfiniteScroll from "react-infinite-scroll-component";
+import '../Gallery/Gallery.css'
 
-const getImages = async ({ pageParam = 0 }) => {
-    const res = await fetch(`gallery.json&offset=${pageParam}`);
-    const data = await res.json();
-    return {
-      pages: [{ ...data, prevOffset: pageParam }],
-    };
-  };
 
 const Gallery = () => {
-    const {data, fetchNextPage, hasNextPage} = useInfiniteQuery({
+    // const [images] = useGallery();
 
-        queryKey: ["images"],
-        queryFn: getImages,
-        getNextPageParam: (lastPage) =>{
-            if(lastPage.prevOffset + 10 > lastPage.imagesCount){
-                return false;
-            }
-            return lastPage.prevOffset + 10;
-        }
-    })
-
-    const images = data?.pages.reduce((acc, page) =>{
-        
-        return [...acc,  ...page.images]
-        
-    }, [])
-
-    console.log(images)
-
+    const [images, fetchMoreImages, hasMoreImages] = useGallery(12);
+    const [hasMore, setHasMore] = useState(hasMoreImages);
+  
+    const handleLoadMore = () => {
+      if (hasMore) {
+        fetchMoreImages();
+        setHasMore(hasMoreImages);
+      }
+    };
+  
     return (
-        <div>
-            
-            
+        <div className="pt-28 gallery-container mb-20">
+      <h2>{images.length}</h2>
+
+      <InfiniteScroll
+        dataLength={images.length}
+        next={handleLoadMore}
+        hasMore={hasMore}
+        loader={<h4>Loading...</h4>}
+      >
+        <div className="image-grid">
+          {images.map((image, index) => (
+            <img key={index} src={image.url} alt={`Image ${index}`} />
+          ))}
         </div>
-    );
+      </InfiniteScroll>
+    </div>
+  );
 };
 
 export default Gallery;

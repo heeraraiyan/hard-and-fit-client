@@ -10,6 +10,9 @@ import Classes from "../pages/Classes/Classes";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
+import Dashboard from "../Layout/Dashboard";
+import Subscribers from "../pages/Dashboard/Subscribers";
+import AllTrainer from "../pages/Dashboard/AllTrainer";
 
 
  export const router = createBrowserRouter([
@@ -44,4 +47,19 @@ import Register from "../pages/Register/Register";
         
       ]
     },
+    {
+      path: 'dashboard',
+      element: <Dashboard></Dashboard>,
+      children: [
+        {
+          path: 'subscribers',  // Corrected path
+          element: <Subscribers></Subscribers>,
+        },
+        {
+          path: 'allTrainer',
+          element: <AllTrainer></AllTrainer>
+        }
+      ]
+    }
+    
   ]);
