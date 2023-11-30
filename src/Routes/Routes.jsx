@@ -18,6 +18,7 @@ import BeTrainer from "../pages/Trainer/BeTrainer";
 import PrivateRoute from "../pages/PrivateRoute/PrivateRoute";
 import AdminRoute from "./AdminRoute";
 import AllUser from "../pages/Dashboard/AllUser";
+import Payment from "../pages/Dashboard/Payment";
 
 
  export const router = createBrowserRouter([
@@ -75,6 +76,10 @@ import AllUser from "../pages/Dashboard/AllUser";
         {
           path: 'alluser',
           element: <AllUser></AllUser>
+        },
+        {
+          path: 'payment',
+          element: <Payment></Payment>
         }
       ]
     }

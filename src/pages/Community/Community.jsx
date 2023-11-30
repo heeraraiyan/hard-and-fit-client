@@ -13,7 +13,7 @@ const Community = () => {
   
 
     useEffect(() => {
-        // Fetch posts from your backend API
+        
         axiosPublic.get('/posts')
           .then((response) => setPosts(response.data))
           .catch((error) => console.error('Error fetching posts:', error));
@@ -22,8 +22,7 @@ const Community = () => {
 
 
     const handleVote = (postId, type) => {
-        // Implement up-vote and down-vote logic and update the backend
-        // You may use another API endpoint for handling votes
+        
         console.log(`Post ${postId} ${type}-voted`);
       };
     return ( <div className="community-container pt-28">
