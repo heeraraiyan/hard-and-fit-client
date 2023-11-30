@@ -24,6 +24,7 @@ const Navbar = () => {
     <li> <Link to="/classes">Classes</Link></li>
     <li> <Link to="/community">Community</Link></li>
 
+
     {/* {
       user && isAdmin && <li><Link t0='/dashboard/adminhome'>Dashboard</Link></li>
     }
@@ -32,6 +33,11 @@ const Navbar = () => {
       user && isAdmin && <li><Link t0='/dashboard/userhome'></Link></li>
     } */}
     <li> <Link to="/dashboard/subscribers">Dashboard</Link></li>
+
+    {/* {
+      user && <Link to="/profile">Profile</Link>
+    } */}
+
 
     {/* <li> <Link to="/login">Login</Link></li> */}
 
@@ -62,6 +68,8 @@ const Navbar = () => {
         <div className="navbar-end">
           {
             user ? <>
+
+              <Link to="/profile">Profile</Link>
               <div className="flex justify-between gap-10">
                 <div className="flex justify-between gap-3">
                   <img className="w-10 h-10 rounded-full" alt="" src={user.photoURL} />

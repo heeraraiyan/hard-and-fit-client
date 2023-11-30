@@ -22,7 +22,8 @@ import Payment from "../pages/Dashboard/Payment";
 import AdminHome from "../pages/Dashboard/AdminHome";
 import UserHome from "../pages/Dashboard/UserHome";
 import Balance from "../pages/Dashboard/Balance";
-import ApliedTrainer from "../pages/Dashboard/ApliedTrainer";
+import Profile from "../pages/Profile/Profile";
+// import ApliedTrainer from "../pages/Dashboard/ApliedTrainer";
 
 
  export const router = createBrowserRouter([
@@ -61,6 +62,10 @@ import ApliedTrainer from "../pages/Dashboard/ApliedTrainer";
         {
           path: '/betrainer',
           element: <PrivateRoute><BeTrainer></BeTrainer></PrivateRoute>
+        },
+        {
+          path: '/profile',
+          element: <Profile></Profile>
         }
         
       ]
@@ -97,10 +102,10 @@ import ApliedTrainer from "../pages/Dashboard/ApliedTrainer";
           path: 'balance',
           element:<AdminRoute> <Balance></Balance></AdminRoute>
         },
-        {
-          path:'/appliedtrainer',
-          element:<AdminRoute><ApliedTrainer></ApliedTrainer></AdminRoute>
-        }
+        // {
+        //   path:'/appliedtrainer',
+        //   element:<AdminRoute><ApliedTrainer></ApliedTrainer></AdminRoute>
+        // }
       ]
     }
     
