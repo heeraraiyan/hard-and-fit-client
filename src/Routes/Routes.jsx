@@ -55,7 +55,7 @@ import AllUser from "../pages/Dashboard/AllUser";
         },
         {
           path: '/betrainer',
-          element: <BeTrainer></BeTrainer>
+          element: <PrivateRoute><BeTrainer></BeTrainer></PrivateRoute>
         }
         
       ]
