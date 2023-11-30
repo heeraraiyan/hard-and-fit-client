@@ -18,13 +18,20 @@ const Dashboard = () => {
                         isAdmin ? <>
 
 
+                            <li className="text-2xl text-slate-800  bg-slate-100 mx-4 rounded-md py-1 mb-4 text-center"><NavLink to='adminhome'>Admin Home</NavLink></li>
+
+
                             <li className="text-2xl text-slate-800  bg-slate-100 mx-4 rounded-md py-1 mb-4 text-center"><NavLink to='subscribers'>All Subscribes</NavLink></li>
                             <li className="text-2xl text-slate-800  bg-slate-100 mx-4 rounded-md py-1 mb-4 text-center"><NavLink to='/dashboard/allTrainer'>All trainers</NavLink></li>
+
+                            <progress className="progress progress-success w-56 pl-4 mb-4" value="100" max="100"></progress>
 
                             <li className="text-2xl text-slate-800  bg-slate-100 mx-4 rounded-md py-1 mb-4 text-center"><NavLink to='/'>Home</NavLink></li>
 
                         </> :
                             <>
+
+                                <li className="text-2xl text-slate-800  bg-slate-100 mx-4 rounded-md py-1 mb-4 text-center"><NavLink to='userhome'>USer Home</NavLink></li>
 
                                 <progress className="progress progress-success w-56 pl-4 mb-4" value="100" max="100"></progress>
 

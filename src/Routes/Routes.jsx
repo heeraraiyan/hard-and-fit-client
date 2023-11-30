@@ -19,6 +19,8 @@ import PrivateRoute from "../pages/PrivateRoute/PrivateRoute";
 import AdminRoute from "./AdminRoute";
 import AllUser from "../pages/Dashboard/AllUser";
 import Payment from "../pages/Dashboard/Payment";
+import AdminHome from "../pages/Dashboard/AdminHome";
+import UserHome from "../pages/Dashboard/UserHome";
 
 
  export const router = createBrowserRouter([
@@ -80,6 +82,14 @@ import Payment from "../pages/Dashboard/Payment";
         {
           path: 'payment',
           element: <Payment></Payment>
+        },
+        {
+          path: 'adminhome',
+          element: <AdminRoute><AdminHome></AdminHome></AdminRoute>
+        },
+        {
+          path: 'userhome',
+          element: <UserHome></UserHome>
         }
       ]
     }
