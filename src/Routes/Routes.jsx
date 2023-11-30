@@ -21,6 +21,8 @@ import AllUser from "../pages/Dashboard/AllUser";
 import Payment from "../pages/Dashboard/Payment";
 import AdminHome from "../pages/Dashboard/AdminHome";
 import UserHome from "../pages/Dashboard/UserHome";
+import Balance from "../pages/Dashboard/Balance";
+import ApliedTrainer from "../pages/Dashboard/ApliedTrainer";
 
 
  export const router = createBrowserRouter([
@@ -90,6 +92,14 @@ import UserHome from "../pages/Dashboard/UserHome";
         {
           path: 'userhome',
           element: <UserHome></UserHome>
+        },
+        {
+          path: 'balance',
+          element:<AdminRoute> <Balance></Balance></AdminRoute>
+        },
+        {
+          path:'/appliedtrainer',
+          element:<AdminRoute><ApliedTrainer></ApliedTrainer></AdminRoute>
         }
       ]
     }

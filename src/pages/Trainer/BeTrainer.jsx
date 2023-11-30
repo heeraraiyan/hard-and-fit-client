@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import useAxiosScure from "../../hooks/useAxiosScure";
+import Swal from "sweetalert2";
 
 
 const BeTrainer = () => {
@@ -26,6 +27,13 @@ const BeTrainer = () => {
   
         if (response.data.success) {
           console.log('Data submitted successfully');
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "apllied succesfully",
+            showConfirmButton: false,
+            timer: 1500
+          });
           // Optionally, you can reset the form here
           setFormData({
             // Reset your form data properties

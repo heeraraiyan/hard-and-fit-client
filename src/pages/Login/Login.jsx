@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProviders";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import { Helmet } from "react-helmet-async";
+import Swal from "sweetalert2";
 
 
 const Login = () => {
@@ -28,6 +29,13 @@ const Login = () => {
         signIn(email, password)
         .then(result=>{
           console.log(result.user);
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Login succesfully",
+            showConfirmButton: false,
+            timer: 1500
+          });
           e.target.reset();
           navigate(location?.state ? location .state : '/');
         })

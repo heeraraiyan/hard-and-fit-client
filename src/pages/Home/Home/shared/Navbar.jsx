@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../../providers/AuthProviders";
-import useAdmin from "../../../../hooks/useAdmin";
+// import useAdmin from "../../../../hooks/useAdmin";
 
 
 const Navbar = () => {
 
-  const [isAdmin] = useAdmin();
+  // const [isAdmin] = useAdmin();
 
   const { user, logOut } = useContext(AuthContext);
   console.log(user)
@@ -24,14 +24,14 @@ const Navbar = () => {
     <li> <Link to="/classes">Classes</Link></li>
     <li> <Link to="/community">Community</Link></li>
 
-    {
+    {/* {
       user && isAdmin && <li><Link t0='/dashboard/adminhome'>Dashboard</Link></li>
     }
 
     {
       user && isAdmin && <li><Link t0='/dashboard/userhome'></Link></li>
-    }
-    {/* <li> <Link to="/dashboard/subscribers">Dashboard</Link></li> */}
+    } */}
+    <li> <Link to="/dashboard/subscribers">Dashboard</Link></li>
 
     {/* <li> <Link to="/login">Login</Link></li> */}
 

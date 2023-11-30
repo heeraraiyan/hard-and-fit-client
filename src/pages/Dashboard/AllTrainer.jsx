@@ -28,16 +28,7 @@ const AllTrainer = () => {
                 <td className="border p-2">{train.experience} years</td>
                 <td className="border p-2">{train.joinedDate}</td>
                 <td className="border p-2"><Link to='/dashboard/payment'><button className=" border-4 px-2 border-blue-600">pay</button></Link></td>
-                {/* <td className="border p-2">
-                  {train.paymentStatus === "pending" && (
-                    <button
-                      className="bg-blue-500 text-white px-2 py-1 rounded"
-                      onClick={() => handlePayClick(trainer.id)}
-                    >
-                      Pay Salary
-                    </button>
-                  )}
-                </td> */}
+                
               </tr>
             ))}
           </tbody>
