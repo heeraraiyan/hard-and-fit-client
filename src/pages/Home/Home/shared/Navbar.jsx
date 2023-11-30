@@ -6,11 +6,11 @@ import { AuthContext } from "../../../../providers/AuthProviders";
 const Navbar = () => {
 
   const { user ,logOut } =useContext(AuthContext);
-  // console.log(user)
+  console.log(user)
  
   const handleLogOut = () =>{
     logOut()
-    .then(()=>console.log('user logged'))
+    .then(()=>console.log(user))
     .catch(error => console.error(error))
   }
 
@@ -51,9 +51,15 @@ const Navbar = () => {
 <div className="navbar-end">
        {
             user? <>
+            <div className="flex justify-between gap-10">
+            <div className="flex justify-between gap-3">
+            <img className="w-10 h-10 rounded-full" alt="" src={user.photoURL} />
+            <span className="text-xl font-normal">{user.email}</span>
+            </div>
             
-            <span>{user.email}</span>
             <a onClick={handleLogOut} className="btn btn-error rounded-full">sign out</a>
+            </div>
+            
             
             
             </>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import useTrainer from "../../hooks/useTrainer";
 import { Link } from "react-router-dom";
@@ -10,33 +10,12 @@ import { Link } from "react-router-dom";
 const Classes = () => {
     const [trainer] = useTrainer();
     const [selectedClass, setSelectedClass] = useState(null);
-  const [weeklyCalendar, setWeeklyCalendar] = useState([]);
 
-  useEffect(() => {
-    generateWeeklyCalendar();
-  }, [trainer]);
-
-  const generateWeeklyCalendar = () => {
-    const uniqueTimeSlots = [...new Set(trainer.flatMap((cls) => cls.availableTimeSlots))];
-   
-
-    const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-
-    const calendar = daysOfWeek.map((day) => ({
-      day,
-      timeSlots: uniqueTimeSlots
-        .filter((slot) => slot.includes(day))
-        .sort((a, b) => a.localeCompare(b)),
-    }));
-
-    setWeeklyCalendar(calendar);
-  };
-
-  const handleClassClick = (classId) => {
-    const selectedClass = trainer.find((cls) => cls.id === classId);
-    setSelectedClass(selectedClass);
-  };
-
+    const handleClassClick = (classId) => {
+      const selectedClass = trainer.find((cls) => cls.id === classId);
+      setSelectedClass(selectedClass);
+    };
+  
     
   
     return (
@@ -45,18 +24,9 @@ const Classes = () => {
           <title>HARD & TIME | Classes</title>
         </Helmet>
         <h2 className="text-3xl font-bold mb-4 text-slate-100 pl-10 pt-6">Weekly Schedule</h2>
-        <div className="grid grid-cols-7 gap-4 mb-8 px-10">
-        {weeklyCalendar.map((daySlot) => (
-          <div key={daySlot.day}>
-            <p className="text-white">{daySlot.day}</p>
-            {daySlot.timeSlots.map((timeSlot) => (
-              <p key={timeSlot} className="text-white">
-                {timeSlot}
-              </p>
-            ))}
-          </div>
-        ))}
-      </div>
+        <div className="grid grid-cols-7 gap-4 mb-8 ">
+          
+        </div>
   
         <h2 className="text-3xl font-bold mb-4 text-slate-100 py-8 pl-10">All Classes</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10 gap-8">

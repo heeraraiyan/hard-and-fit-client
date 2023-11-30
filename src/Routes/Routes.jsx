@@ -15,6 +15,9 @@ import Subscribers from "../pages/Dashboard/Subscribers";
 import AllTrainer from "../pages/Dashboard/AllTrainer";
 import Community from "../pages/Community/Community";
 import BeTrainer from "../pages/Trainer/BeTrainer";
+import PrivateRoute from "../pages/PrivateRoute/PrivateRoute";
+import AdminRoute from "./AdminRoute";
+import AllUser from "../pages/Dashboard/AllUser";
 
 
  export const router = createBrowserRouter([
@@ -59,15 +62,19 @@ import BeTrainer from "../pages/Trainer/BeTrainer";
     },
     {
       path: 'dashboard',
-      element: <Dashboard></Dashboard>,
+      element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
       children: [
         {
           path: 'subscribers',  // Corrected path
-          element: <Subscribers></Subscribers>,
+          element: <Subscribers></Subscribers>
         },
         {
           path: 'allTrainer',
-          element: <AllTrainer></AllTrainer>
+          element:<AdminRoute> <AllTrainer></AllTrainer></AdminRoute>
+        },
+        {
+          path: 'alluser',
+          element: <AllUser></AllUser>
         }
       ]
     }

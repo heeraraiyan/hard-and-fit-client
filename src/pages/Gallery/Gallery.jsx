@@ -31,9 +31,9 @@ const Gallery = () => {
         hasMore={hasMore}
         loader={<h4>Loading...</h4>}
       >
-        <div className="image-grid">
+        <div className="image-grid"data-aos="fade-up"data-aos-duration="1000">
           {images.map((image, index) => (
-            <img key={index} src={image.url} alt={`Image ${index}`} />
+            <img data-aos="fade-up"data-aos-duration="2000"  key={index} src={image.url} alt={`Image ${index}`} />
           ))}
         </div>
       </InfiniteScroll>
