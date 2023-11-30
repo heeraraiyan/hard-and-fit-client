@@ -4,7 +4,7 @@ const AllUser = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/users')
+    fetch('https://hard-and-fit-server.vercel.app/users')
       .then(res => res.json())
       .then(data => setUsers(data))
       .catch(error => console.error('Error fetching users:', error));

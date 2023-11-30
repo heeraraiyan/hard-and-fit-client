@@ -7,7 +7,7 @@ const useFeatures = () => {
     const [loading,setLoading] = useState(true)
    
     useEffect(()=>{
-        fetch('http://localhost:5000/features')
+        fetch('https://hard-and-fit-server.vercel.app/features')
         .then(res=>res.json())
         .then(data=>{
             setFeatures(data);
